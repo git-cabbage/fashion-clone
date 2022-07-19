@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+
+.icon {
+    font-size: 2.5rem;
+    padding: 8px 15px;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.3);
+    }
+}
