@@ -31,7 +31,7 @@ function Button({ to, href, icon, onClick, className, ...passProps }) {
 
     return (
         <Comp className={classes} onClick={handleOnClick} {...passProps}>
-            <span className={cx('icon')}>{icon}</span>
+            <p className={cx('icon')}>{icon}</p>
         </Comp>
     )
 }

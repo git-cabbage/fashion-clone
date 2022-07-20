@@ -5,6 +5,10 @@
 }
 
 .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-size: 2.5rem;
     padding: 8px 15px;
     cursor: pointer;
