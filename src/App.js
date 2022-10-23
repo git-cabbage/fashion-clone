@@ -6,7 +6,7 @@ import Layouts from './Layouts/Layouts'
 function App() {
     return (
         <Router>
-            <div className="app">
+            <div className="app" onScroll={(e) => console.log(e)}>
                 <Routes>
                     {publicLink.map((route, index) => {
                         let Layout = Layouts

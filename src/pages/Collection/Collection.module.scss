@@ -1,0 +1,13 @@
+.wrapper {
+    h1.title {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,37 @@
+.item {
+
+    width: 30%;
+    font-size: 2rem;
+    margin: 0px 20px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    background-color: var(--primary);
+
+    img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .btn-detail {
+        width: 150px;
+        height: 50px;
+
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+        background-color: whitesmoke;
+        box-shadow: 4px 8px black;
+
+        &:hover {
+            transition: .3s ease-out;
+            box-shadow: 2px 4px black;
+            text-decoration: underline;
+        }
+    }
+
+    .item-name {}
+
+    .item-price {}
+}

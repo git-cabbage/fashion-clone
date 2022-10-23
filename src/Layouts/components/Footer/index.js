@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './Footer.module.scss'
 import Card from '../Card'
@@ -10,6 +9,7 @@ import {
     faTiktok,
     faYoutube,
 } from '@fortawesome/free-brands-svg-icons'
+import Button from '../Button'
 
 const cx = classNames.bind(styles)
 
@@ -29,16 +29,28 @@ function Footer() {
                 <Card title="Theo dõi chúng tôi">
                     <ul className={cx('follow')}>
                         <li>
-                            <FontAwesomeIcon icon={faInstagram} />
+                            <Button
+                                href="https://www.instagram.com/"
+                                icon={<FontAwesomeIcon icon={faInstagram} />}
+                            />
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faFacebook} />
+                            <Button
+                                href="https://www.facebook.com/"
+                                icon={<FontAwesomeIcon icon={faFacebook} />}
+                            />
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faYoutube} />
+                            <Button
+                                href="https://www.youtube.com/"
+                                icon={<FontAwesomeIcon icon={faYoutube} />}
+                            />
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faTiktok} />
+                            <Button
+                                href="https://www.tiktok.com/"
+                                icon={<FontAwesomeIcon icon={faTiktok} />}
+                            />
                         </li>
                     </ul>
                 </Card>

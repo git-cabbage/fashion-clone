@@ -1,0 +1,20 @@
+.wrapper {
+    hr.line {
+        width: 90%;
+        border: 3px dashed black;
+        margin: 0 auto;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: flex-start;
+}

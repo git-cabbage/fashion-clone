@@ -6,7 +6,16 @@ import styles from './Button.module.scss'
 
 const cx = classNames.bind(styles)
 
-function Button({ to, href, icon, onClick, className, ...passProps }) {
+function Button({
+    to,
+    href,
+    icon,
+    onClick,
+    className,
+    outline = false,
+    children,
+    ...passProps
+}) {
     let Comp = 'button'
 
     const props = {
@@ -25,13 +34,15 @@ function Button({ to, href, icon, onClick, className, ...passProps }) {
 
     const classes = cx('wrapper', {
         [className]: className,
+        outline,
     })
 
     const handleOnClick = () => {}
 
     return (
-        <Comp className={classes} onClick={handleOnClick} {...passProps}>
-            <p className={cx('icon')}>{icon}</p>
+        <Comp className={classes} onClick={handleOnClick} {...props}>
+            {icon ? <p className={cx('icon')}>{icon}</p> : null}
+            {children}
         </Comp>
     )
 }

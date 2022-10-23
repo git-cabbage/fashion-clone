@@ -15,5 +15,11 @@
 
     &:hover {
         transform: scale(1.3);
+        color: bisque;
+        transition: .3s ease-in-out;
     }
+}
+
+.outline {
+    border: 1px solid black;
 }
