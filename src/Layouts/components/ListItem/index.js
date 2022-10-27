@@ -1,17 +1,16 @@
 import React from 'react'
-import classNames from 'classnames/bind'
-
-import styles from './ListItem.module.scss'
-
-const cx = classNames.bind(styles)
 
 function ListItem({ title, children }) {
     return (
-        <div className={cx('wrapper')}>
-            <h1>{title}</h1>
-            <hr className={cx('line')} />
-            <div className={cx('container')}>
-                <div className={cx('content')}>{children}</div>
+        <div className="flex flex-col items-center">
+            <h1 className="w-4/5 my-[40px] mx-auto text-5xl text-right underline">
+                {title}
+            </h1>
+            <hr className="w-[90%] border-dashed border-black border-[3px] mx-0 my-auto" />
+            <div className="flex justify-center">
+                <div className="flex flex-wrap w-4/5 justify-start gap-x-[52px] gap-y-20 my-28">
+                    {children}
+                </div>
             </div>
         </div>
     )

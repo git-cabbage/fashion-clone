@@ -1,15 +1,11 @@
 import React from 'react'
-import classNames from 'classnames/bind'
 
-import styles from './Home.module.scss'
 import ListItem from '../../Layouts/components/ListItem'
 import Item from '../../Layouts/components/Item'
 
-const cx = classNames.bind(styles)
-
 function Home() {
     return (
-        <div className={cx('wrapper')}>
+        <div className="my-[100px] mx-0 text-center">
             <ListItem title="New Arrials">
                 <Item
                     id="id"

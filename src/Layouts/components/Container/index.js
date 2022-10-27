@@ -8,9 +8,9 @@ const cx = classNames.bind(styles)
 
 function Container({ children }) {
     return (
-        <div className={cx('wrapper')}>
+        <div className="min-h-[1500px] w-full">
             <Slideshow />
-            <div className={cx('container')}>{children}</div>
+            <div className="flex items-center w-full">{children}</div>
         </div>
     )
 }

@@ -41,7 +41,11 @@ function Button({
 
     return (
         <Comp className={classes} onClick={handleOnClick} {...props}>
-            {icon ? <p className={cx('icon')}>{icon}</p> : null}
+            {icon ? (
+                <p className="flex items-center justify-center text-4xl px-4 py-2 cursor-pointer">
+                    {icon}
+                </p>
+            ) : null}
             {children}
         </Comp>
     )
